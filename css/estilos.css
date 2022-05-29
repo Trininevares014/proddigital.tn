@@ -1,0 +1,229 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body{
+        background-color: rgb(245,245,245);
+    }
+
+    .container{
+        max-width: 1300px;
+        margin: 10px auto;
+        background-color: rgb(245,245,245);
+    }
+    
+     .superior{
+         background-color: rgb(245,245,245);
+         overflow: hidden;
+     }
+
+     .logo{
+         float:left;
+         width: 300px;
+         padding: 20px;
+
+     }
+
+     .menu{
+         float: right;
+         padding: 3%;
+     }
+
+     .opciones li{
+         float: left;
+         list-style: none;
+     }
+
+     .opciones li a{
+         color:black;
+         padding: 20px;
+     }
+
+    header.logo {
+        margin: 0;
+        padding: 25px 30px;
+        }
+    
+    header.container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header.nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    
+    header a{
+        padding: 5px 12px; 
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    header a:hover{
+        color: rgb(248, 198, 59);
+    }
+
+h1{
+    color:  rgb(248, 198, 59);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 3.5em;
+}
+
+h2{
+    color: rgb(248, 198, 59);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2.7em;
+}
+
+ #hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    background-color: black;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+ 
+
+ #personajes .container{
+     display: flex;
+     margin-top: 5%;
+     background-color:  rgb(245,245,245);
+ }
+ 
+
+
+ .container a{
+    color: black;
+    padding: 5px 12px; 
+    text-decoration: none;
+    font-weight: bolder;
+ }
+ 
+
+
+ article div{
+     float: left;
+     width: 230px;
+     margin: 15px;
+ } 
+
+section p{
+    color: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 60px;
+    padding-left: 60px;
+    column-count: 2;
+    column-gap: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 30;
+    font-style: normal;
+    font-size: 0,1em;
+    background-color: rgb(245,245,245);
+}
+
+article p{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 30;
+    font-style: normal;
+    font-size: 0,1em;
+}
+
+ article{ 
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+article div{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+article section div{
+    display: flex;
+    justify-content: center;
+    padding: 20%;
+}
+
+.personajes{
+    margin-top: 5%;
+    display: flex;
+    background-color: rgb(245,245,245);
+}
+
+.personajes p{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 30;
+    font-style: normal;
+    font-size: 0,1em;
+}
+
+.personajes img{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+footer{
+    background-color: rgb(245,245,245);
+    padding: 20%;
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 30;
+    font-style: normal;
+    font-size: 0,1em;
+}
+
+footer div img{
+    padding-top: 2.5rem;
+    width: 100%;
+    height: auto;
+    margin-right: 1%;
+    max-width: 2.5rem;
+}
+
+
+.fotos{
+    margin-top: 5%;
+    display: flex;
+    background-color: rgb(245,245,245);
+}
+
+ .fotos div{
+     width: 33%;
+     padding: 2%;
+ }
+ .fotos div img{
+     width: 100%;
+     margin-bottom: 2%;
+ }
+
+
+ 
+
+
+
+
+
+
