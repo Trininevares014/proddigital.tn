@@ -6,6 +6,7 @@
 <title>index.html</title>
 
 <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 
 <body>
@@ -16,14 +17,23 @@
                    <img src="imagenes/logo2.jpg"
                    alt="logo">
                 </div>
-        
-                <nav class="menu">
+
+              
+               
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <nav id="navegador"  class="menu">
+                    
+                 
+                
                    <ul class="opciones">
                        <li><a href="index.html">HOME</a></li>
                        <li><a href="argumento.html">ARGUMENTO</a></li>
                        <li><a href="personajes.html">PERSONAJES</a></li>
                        <li><a href="galeria.html">GALERIA</a></li>
                        <li><a href="caracteristicas.html">CARACTERISTICAS</a></li>
+                       <li><a href="contacto.html">CONTACTO</a></li>
                    </ul>
                 </nav>
             
@@ -40,18 +50,17 @@
     <section class="fotos">
         <div>
             <img src="imagenes/fabioymacarena3.jpg" alt="fabioymacarena">
+            <h4>¿Hay un reencuentro?</h4>
         </div>
         <div>
             <img src="imagenes/losferreiro3.jpg" alt="leopoldoyroman">
+            <h4>¿Encuentran el dinero?</h4>
         </div>
         <div>
             <img src="imagenes/maca3.jpg" alt="maca">
+            <h4>¿Logra escapar?</h4>
         </div>
     </section>
-
-  
-    
-    
     
 
      <footer>
@@ -63,5 +72,17 @@
          <p>La Cruda Realidad <br> By Trinidad de Nevares</p>
      </footer>
 </body>
+
+<script type="text/javascript">
+
+    function myFunction(){
+        let x = document.getElementById('navegador');
+        if (x.className !== 'menu responsive'){
+            x.className = 'menu responsive';
+        } else {
+             x.className = 'menu';
+        }
+    }
+</script>
 
 </html>

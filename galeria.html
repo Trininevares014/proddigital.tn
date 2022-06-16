@@ -7,6 +7,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
 <link rel="stylesheet" type="text/css" href="css/lightbox.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 
 <body>
@@ -16,14 +17,22 @@
                    <img src="imagenes/logo2.jpg"
                    alt="logo">
                 </div>
-        
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+
                 <nav class="menu">
+
+                   
+
                    <ul class="opciones">
                        <li><a href="index.html">HOME</a></li>
                        <li><a href="argumento.html">ARGUMENTO</a></li>
                        <li><a href="personajes.html">PERSONAJES</a></li>
                        <li><a href="galeria.html">GALERIA</a></li>
                        <li><a href="caracteristicas.html">CARACTERISTICAS</a></li>
+                       <li><a href="contacto.html">CONTACTO</a></li>
                    </ul>
                 </nav>
      </header>
@@ -66,4 +75,17 @@
     </footer>
     <script src="js/lightbox-plus-jquery.min.js"></script>
     </body>
+
+    <script type="text/javascript">
+
+        function myFunction(){
+            let x = document.getElementById('navegador');
+            if (x.className !== 'menu responsive'){
+                x.className = 'menu responsive';
+            } else {
+                 x.className = 'menu';
+            }
+        }
+    </script>
+
     </html>

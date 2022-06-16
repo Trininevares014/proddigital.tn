@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>argumento.html</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" href="css/estilos.css"/> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+
+<body>
+      <header class="superior">
+                <div class="logo">
+                    <img src="imagenes/logo2.jpg"
+                    alt="logo">
+                 </div>
+
+                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                 </a>
+         
+                 <nav class="menu">
+
+
+                    <ul class="opciones">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="argumento.html">ARGUMENTO</a></li>
+                        <li><a href="personajes.html">PERSONAJES</a></li>
+                        <li><a href="galeria.html">GALERIA</a></li>
+                        <li><a href="caracteristicas.html">CARACTERISTICAS</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                    </ul>
+                 </nav>
+        </header>
+
+             <section id="hero">
+                <h1>CONTACTO</h1>
+            </section>
+         
+          <section>
+              <article class="terciario">
+                  <div>
+                      <form action="mailto: trininevares@gmail.com" method="get">
+                          <label for="nombre"> INGRESE SU NOMBRE</label> <br>
+                          <input type="text" name="nombre">
+                          <label for="email"> INGRESE SU CORREO ELECTRONICO</label> <br>
+                          <input type="email" name="email">
+                          <label for="comentario"> INGRESE SU COMENTARIO</label>
+                          <textarea name="comentario"> INGRESE SU COMENTARIO</textarea>
+                          <button> ENVIAR </button>
+                      </form>
+                  </div>
+                  <div>
+                      <img src="imagenes/visavis1.jpg">
+                  </div>
+              </article>
+          </section>
+
+            <footer>
+           <div>
+           <img src="imagenes/facebook2.jpg" alt="facebook">
+           <img src="imagenes/instagram2.jpg" alt="instagram">
+           <img src="imagenes/twitter2.jpg" alt="twitter">
+           </div>
+           <p>La Cruda Realidad <br> By Trinidad de Nevares</p>
+            </footer>
+
+  </body>
+
+  <script type="text/javascript">
+
+    function myFunction(){
+        let x = document.getElementById('navegador');
+        if (x.className !== 'menu responsive'){
+            x.className = 'menu responsive';
+        } else {
+             x.className = 'menu';
+        }
+    }
+</script>
+
+ </html>

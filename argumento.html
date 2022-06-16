@@ -8,6 +8,7 @@
 
 
 <link rel="stylesheet" type="text/css" href="css/estilos.css"/> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 
 <body>
@@ -16,15 +17,20 @@
                     <img src="imagenes/logo2.jpg"
                     alt="logo">
                  </div>
+
+                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                 </a>
          
-                 <nav class="menu">
+                 <nav id="navegador" class="menu">
+
                     <ul class="opciones">
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="argumento.html">ARGUMENTO</a></li>
                         <li><a href="personajes.html">PERSONAJES</a></li>
                         <li><a href="galeria.html">GALERIA</a></li>
                         <li><a href="caracteristicas.html">CARACTERISTICAS</a></li>
-                    
+                        <li><a href="contacto.html">CONTACTO</a></li>
                     </ul>
                  </nav>
         </header>
@@ -33,9 +39,11 @@
                 <h1>ARGUMENTO</h1>
             </section>
          
-            <section>
+            <section class="argumento">
             <p>En este capítulo vemos presentes muchos momentos clave para poder terminar de cerrar algunas ideas y abrir otras. Al principio vemos el encuentro de Maca y El Egipcio en medio de un tiroteo en el bosque, después de que este les haya disparado a Castillo y Fabio. Macarena logra dispararle para salvar a su hijo. Después, vemos a Rizos fingiendo un dolor de cabeza para poder acompañar a su novia en su primera ecografía. Más adelante vemos a Zulema provocando a Maca para sacarle información acerca del bosque y su novio, pero esta vez no se queda callada sino que se anima a afrontarla y le dice que si logra irse de Cruz del sur, sería una alegría para todas las reclusas. A continuación, vemos a la Directora hablando con Rizos para contarle que se le iba a poder conceder el modulo de semilibertad solo si conseguía un trabajo. Más tarde, Maca tiene un vis a vis con su padre y su hermano porque se enteraron lo ocurrido en el bosque y querían saber cómo estaba. Al final del capítulo, vemos como Ferreiro se anima a decirle a Zulema que le había disparado al Egipcio y la amenazo por defensa de su hijo.</p>
+            <img src="imagenes/grupo1.jpg" alt="grupal">
             </section>
+
             <footer>
            <div>
            <img src="imagenes/facebook2.jpg" alt="facebook">
@@ -46,4 +54,17 @@
             </footer>
 
   </body>
+
+  <script type="text/javascript">
+
+    function myFunction(){
+        let x = document.getElementById('navegador');
+        if (x.className !== 'menu responsive'){
+            x.className = 'menu responsive';
+        } else {
+             x.className = 'menu';
+        }
+    }
+</script>
+
  </html>
