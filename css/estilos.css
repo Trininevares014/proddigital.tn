@@ -104,8 +104,36 @@ h2{
  .personajes div{
      width: 33%;
      padding: 2%;
-     flex-wrap: wrap ;
  }
+
+ .maca{
+    position: absolute;
+    top: 500px;
+    left: 90px;
+}
+ .zule{
+     position: absolute;
+     top: 500px;
+     right: 90px;
+ }
+
+ .rizos{
+    position: absolute;
+    top: 1000px;
+    left: 90px;
+ }
+
+ .saray{
+    position: absolute;
+    top: 1000px;
+    right: 80px;
+ }
+
+ .sandoval{
+    position: absolute;
+    top: 1500px;
+ }
+
 
  .personajes div img{
      width: 100%;
@@ -268,7 +296,7 @@ h3{
         flex-basis: 100%;
     }
 
-    nav ul{ display: none;}
+     nav ul{ display: none;}
 
     nav.menu.responsive ul{
         display: block;
@@ -277,24 +305,41 @@ h3{
  
 
     #hero{
-        height: 350px;
+        height: 185px;
     }
 
+    h1{
+    font-weight: 300;
+    font-size: 2.5em;
+    }
+
+    h2{
+    font-weight: 200;
+     font-size: 1.7em;
+    }
+
+    
+
+
     h4{
-        font-size: 22px;
+        font-size: 12px;
         padding: 1% 15%; 
     }
 
+    
+     .personajes div{
+            width: 33%;
+            padding: 2%;
+            flex-wrap: wrap ;
+            font-size: 12px;
+        }
+    
+
     section p{
-        padding-top: 40px;
-        padding-bottom: 40px;
-        padding-right: 60px;
-        padding-left: 60px;
-        column-count: 2;
-        column-gap: 40px;
-        font-weight: 10;
-        font-style: normal;
-        font-size: 0,1em;
+     column-count: 1;
+     column-gap: 40px;
+     font-weight: 10;
+     font-size: 15px;
      } 
 
     footer div img{
@@ -302,12 +347,13 @@ h3{
         width: 100%;
         height: auto;
         margin-right: 1%;
-        max-width: 2.5rem;
+        max-width: 1.5rem;
     }
 
     footer{
-        padding: 20%;
-        height: 350px;
+        height: 150px;
+        font-weight: 10;
+        font-size: 0,1em;
     }
 }
 
