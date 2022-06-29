@@ -131,9 +131,8 @@ h3{
 }
 
  article div{
-     float: left;
-     width: 230px;
-     margin: 15px;
+     width: 200px;
+     margin: 30px;
  } 
 
  
@@ -161,17 +160,18 @@ h3{
     font-size: 0,1em;
 }
 
- article{ 
+ .caracteristicas .text{ 
     display: flex;
     justify-content: center;
     padding: 5%;
+    width: 100%;
 }
 
- article div{
+.caracteristicas .image{
     display: flex;
     justify-content: center;
-    padding: 5%;
-}
+    width: 100%;
+} 
 
  article section div{
     display: flex;
@@ -179,26 +179,42 @@ h3{
     padding: 20%;
 }
 
- footer{
-    background-color: rgb(245,245,245);
-    padding: 20%;
+.galeria{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.galeria .image{
+    width: 100%;
+    
+}
+
+
+ .example-image-link{
+    display: inline-flex;
+    width: 30%;
+    padding: 2%;
     justify-content: center;
-    height: 350px;
+    margin-left: 2%;
+ }
+
+
+ footer {
+    background-color: rgb(245,245,245);
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 30;
     font-style: normal;
     font-size: 0,1em;
+    display: flex;
+    justify-content: center;
+    padding: 12%;
+    margin: 0;
+    align-items: flex-end;
 }
 
- footer div img{
-    padding-top: 2.5rem;
-    width: 100%;
-    height: auto;
-    margin-right: 1%;
-    max-width: 2.5rem;
-}
+
 
 
  .fotos{
@@ -218,17 +234,19 @@ h3{
 
 
 
- .terciario {
+ .terciario .form{
      margin-top: 5%;
-     display: flex;
-     text-align: center;
-     width: 50%;
-     padding: 2%;
+     text-align: left;
+     margin: 10%;
  }
 
- .terciario div img{
-     width: 100%;
-     margin-bottom: 2em;
+ .terciario .contacto img{
+     width: 200%;
+     margin-bottom: 1em;
+     margin-left: 6px;
+     margin-right: 10px;
+     justify-content: center;
+     display: flex;
  }
 
 
@@ -239,7 +257,9 @@ h3{
  @media (max-width: 480px){
 
     nav ul { display: none;} 
-    .icon {display: block;} 
+    .icon {display: block;
+     text-align: right;
+    } 
 
     header{
         flex-wrap: wrap;
@@ -253,7 +273,9 @@ h3{
         flex-basis: 100%;
     }
 
-     nav ul{ display: none;}
+     nav ul{ 
+        display: none;
+    }
 
     nav.menu.responsive ul{
         display: block;
@@ -281,10 +303,13 @@ h3{
 
     
     .personajes div{
-            width: 33%;
-            padding: 2%;
+           
             flex-wrap: wrap ;
             font-size: 12px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+             width: 100%;
         }
     
 
@@ -331,13 +356,41 @@ h3{
 
     .terciario {
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .terciario .form{
+        justify-content: center;
     }
    
-    .terciario div img{
+    .terciario .contacto img{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+
+    .galeria{
+        width: 80%;
+    }
+    
+    .galeria .image{
         width: 100%;
     }
 
+    .example-image-link{
+        display: flex;
+        width: 10%;
+        
+     }
     
+     .caracteristicas .image{
+        width: 80%;
+        display: block;
+    } 
 }
 
     
